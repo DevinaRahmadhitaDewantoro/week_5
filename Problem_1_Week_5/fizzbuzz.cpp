@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    // Declare a vector to store the FizzBuzz results
+    // Declare a vector to store the FizzBuzz results for numbers 1 to 100
     vector<string> fizzBuzzResults(100);
 
     // Loop through numbers from 1 to 100
@@ -26,6 +26,8 @@ int main() {
     for (const string & result : fizzBuzzResults) {
         cout << result << " ";
     }
+    
+    cout << endl; // a new line at the end of the output for better formatting
 
     return 0;  
 }
