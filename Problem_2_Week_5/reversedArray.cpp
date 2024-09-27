@@ -3,8 +3,19 @@
 using namespace std;
 
 int main() {
-    vector<int> arr = {1, 2, 3, 4, 5, 6 , 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
-    int n = arr.size();
+    int n;
+    
+    // Ask the user for the size of the array
+    cout << "Enter the size of the array: ";
+    cin >> n;
+
+    vector<int> arr(n);
+
+    // Ask the user to input elements of the array
+    cout << "Enter " << n << " elements of the array: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
     
     // Temporary array to store elements in reversed order
     vector<int> temp(n);
@@ -21,7 +32,7 @@ int main() {
   
     // Print the reversed array
     for (int i = 0; i < arr.size(); i++) {
-        cout << arr[i] << " ";
+        cout  << arr[i] << " ";
     }
 
     return 0;
